@@ -16,21 +16,23 @@
         <h2 class="section-title">Login</h2>
 
         <div class="contact__container bd-grid">
-            <form action="" class="contact__form" method="POST">
+            <form action="validation/login.php" class="contact__form" method="POST">
+                <h6>Username</h6>
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
+                    <div class="input-group-prepend">      
                     </div>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    <input type="text" name="username" class="form-control" placeholder="Username" aria-label="Username"
                         aria-describedby="basic-addon1" required>
                 </div>
+                <h6>Password</h6>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                     </div>
-                    <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+                    <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Username"
                         aria-describedby="basic-addon1" required>
                 </div>
                 <a href="signup.html" class="tag__text">Sign Up?</a><br>
-                <button type="button" class="btn btn-outline-primary">Login</button>
+                <button type="submit" class="btn btn-outline-primary">Login</button>
             </form>
         </div>
     </section>
