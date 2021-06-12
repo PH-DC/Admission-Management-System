@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Update Student</title>
+    <title>Login</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/login.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -15,20 +15,24 @@
     <section class="contact section" id="contact">
         <div class="services__container container grid">
             <div class="services__content">
-                <h2 class="section-title">Update Student</h2>
-
-
+                <h2 class="section-title">Session Logged Out!</h2>
                 <div class="contact__container bd-grid">
                     <form action="validation/signup.php" class="contact__form" method="POST">
-                        <h6>Enrollment Number</h6>
+                        <h6>Username</h6>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                             </div>
-                            <input type="text" name="enrollment" class="form-control" placeholder="Enrollment Number"
+                            <input type="text" name="username" class="form-control" placeholder="Username"
                                 aria-label="Username" aria-describedby="basic-addon1" required>
                         </div>
-                        <button type="submit" class="btn btn-outline-primary" name="UpdateStudent">Update
-                            Student</button>
+                        <h6>Password</h6>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                            </div>
+                            <input type="password" name="password" class="form-control" placeholder="Password"
+                                aria-label="Username" aria-describedby="basic-addon1" required>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary" name="Login">Login</button>
                     </form>
                 </div>
             </div>
