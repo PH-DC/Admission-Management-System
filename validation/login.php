@@ -1,4 +1,5 @@
 <?php
+
 $username_p = $_POST['username'];
 $password_p = $_POST['password'];
 
@@ -20,12 +21,12 @@ if(isset($_POST['Login']))
 
 	if($row = mysqli_fetch_array($retval))
 	{
-		echo "Login successfull";
+		include 'dashboard.html';
 	}
 	else
 	{
-		echo "Username or Password is incorrect";
-		echo "Error!".$conn->error;
+		include 'error.html';
+		
 	}
 	$conn -> close();
 }

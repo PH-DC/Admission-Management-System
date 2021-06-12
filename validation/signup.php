@@ -22,11 +22,10 @@ if(isset($_POST['Signup']))
 
 	if($conn->query($sql) == TRUE)
 	{
-		echo "Signup successful!";
+		include 'dashboard.html';
 	}
 	else
 	{
-		echo "Error!".$conn->error;
 	}
 	$conn -> close();
 }
