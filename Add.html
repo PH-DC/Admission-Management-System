@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Add Student</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/login.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="contact section" id="contact">
+        <div class="services__container container grid">
+            <div class="services__content">
+        <h2 class="section-title">Add Student</h2>
+
+        
+        <div class="contact__container bd-grid">
+            <form action="validation/signup.php" class="contact__form" method="POST">
+                <h6>Admission Year</h6>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">      
+                    </div>
+                    <input type="number" name="Ayear" class="form-control" placeholder="Admission Year" aria-label="Username"
+                        aria-describedby="basic-addon1" required>
+                </div>
+                <h6>Name</h6>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">      
+                    </div>
+                    <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Username"
+                        aria-describedby="basic-addon1" required>
+                </div>
+                <h6>Date Of Birth</h6>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">      
+                    </div>
+                    <input type="date" name="dob" class="form-control" placeholder="DOB" aria-label="Username"
+                        aria-describedby="basic-addon1" required>
+                </div>
+                <h6>Address</h6>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    </div>
+                    <div class="input-group">
+                        <textarea class="form-control" name="address" placeholder="Address" aria-label="With textarea"></textarea>
+                      </div>
+                    </div>
+                <h6>Phone Number</h6>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">      
+                        </div>
+                        <input type="number" name="pnumber" class="form-control" placeholder="Phone Number" aria-label="Username"
+                            aria-describedby="basic-addon1" required>
+                    </div> 
+                <h6>Parent's Contact Number</h6>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">      
+                        </div>
+                        <input type="number" name="pcnumber" class="form-control" placeholder="Parent's Contact Number" aria-label="Username"
+                            aria-describedby="basic-addon1" required>
+                    </div>
+                <h6>Email Id</h6>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">      
+                        </div>
+                        <input type="email" name="email" class="form-control" placeholder="Email Id" aria-label="Username"
+                            aria-describedby="basic-addon1" required>
+                    </div> 
+                <h6>Enrollment Id</h6>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">      
+                        </div>
+                        <input type="text" name="enrollment" class="form-control" placeholder="Enrollment" aria-label="Username"
+                            aria-describedby="basic-addon1" required>
+                    </div>
+                <h6>Branch</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Computer Engineering
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Civil Engineering
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Mechanical Engineering
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Electrical/Electronics Engineering
+                    </label>
+                  </div>
+                <h6>Scholarship Eligibility</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Eligibility" id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Eligibility" id="flexRadioDefault4">
+                    <label class="form-check-label" for="flexRadioDefault4">
+                      No
+                    </label>
+                  </div>
+                <h6>Fees Paid</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Paid" id="flexRadioDefault5">
+                    <label class="form-check-label" for="flexRadioDefault5">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Paid" id="flexRadioDefault6">
+                    <label class="form-check-label" for="flexRadioDefault6">
+                      No
+                    </label>
+                  </div>
+                  <h6>Enrollment</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="enrollment" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Regular
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="enrollment" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      DSY
+                    </label>
+                  </div>
+                  <h6>Document Submission Status</h6>
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        VIII, IX Marksheet
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        SSC Marksheet
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        HSC Marksheet
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Leaving Certificate
+                      </label>
+                    </div>  
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            GAP (if applicable)
+                        </label>
+                      </div>  
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Domicile
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Birth Certificate
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Cast Certificate (if applicable)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Aadhar Card Attested
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Migration Certificate
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Photos (x2)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Bank Passbook Xerox
+                        </label>
+                      </div><br>
+                <button type="submit" class="btn btn-outline-primary" name="AddStudent">Add Student</button>
+            </form>
+        </div>
+      </div>
+     </div>
+    </section>
+</body>
+
+</html>
