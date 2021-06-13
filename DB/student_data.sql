@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2021 at 01:15 PM
+-- Generation Time: Jun 13, 2021 at 04:12 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.6
 
@@ -18,30 +18,30 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `admission_system`
+-- Database: `student_data`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admission`
+-- Table structure for table `data`
 --
 
-CREATE TABLE `admission` (
+CREATE TABLE `data` (
+  `Sadmission` year(4) NOT NULL,
   `Sname` text NOT NULL,
-  `Semail` text NOT NULL,
-  `Susername` text NOT NULL,
-  `Spassword` text NOT NULL
+  `Sdob` date NOT NULL,
+  `Sadd` varchar(150) NOT NULL,
+  `Sphone` bigint(20) NOT NULL,
+  `Smobile` bigint(20) NOT NULL,
+  `Smail` varchar(150) NOT NULL,
+  `Senrollid` int(11) NOT NULL,
+  `Sbranch` varchar(150) NOT NULL,
+  `Sscholar` text NOT NULL,
+  `Sfeestat` text NOT NULL,
+  `Senrollstat` text NOT NULL,
+  `Sdocumentstat` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `admission`
---
-
-INSERT INTO `admission` (`Sname`, `Semail`, `Susername`, `Spassword`) VALUES
-('Chinmay Mulay', 'chinmay.mulay30@gmail.com', 'cmulay', 'root'),
-('Saurabh Mhatre', 'mhatreunique@gmail.com', 'smhatre', 'smhatre'),
-('Dave Bhandari', 'davestephen2002@gmail.com', 'Davekibh', 'root');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
