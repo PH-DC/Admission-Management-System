@@ -18,6 +18,7 @@
         <h2 class="section-title">Add Student</h2>
 
 
+
         <div class="contact__container bd-grid">
           <form action="validation/add.php" class="contact__form" method="POST">
             <h6>Admission Year</h6>
@@ -80,137 +81,154 @@
             </div>
             <h6>Branch</h6>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" name="branch[]" type="checkbox" value="Computer Engineering"
+                id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
                 Computer Engineering
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <input class="form-check-input" name="branch[]" type="checkbox" value="Civil Engineering"
+                id="flexCheckChecked">
               <label class="form-check-label" for="flexCheckChecked">
                 Civil Engineering
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" name="branch[]" type="checkbox" value="Mechanical Engineering"
+                id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
                 Mechanical Engineering
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <input class="form-check-input" name="branch[]" type="checkbox" value="Electrical/Electronics Engineering"
+                id="flexCheckChecked">
               <label class="form-check-label" for="flexCheckChecked">
                 Electrical/Electronics Engineering
               </label>
             </div>
             <h6>Scholarship Eligibility</h6>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="Eligibility" id="flexRadioDefault3">
+              <input class="form-check-input" name="isScholarCandidate[]" value="is Eligible" type="radio"
+                name="Eligibility" id="flexRadioDefault3">
               <label class="form-check-label" for="flexRadioDefault3">
                 Yes
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="Eligibility" id="flexRadioDefault4">
+              <input class="form-check-input" name="isScholarCandidate[]" value="not Eligible" type="radio"
+                name="Eligibility" id="flexRadioDefault4">
               <label class="form-check-label" for="flexRadioDefault4">
                 No
               </label>
             </div>
             <h6>Fees Paid</h6>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="Paid" id="flexRadioDefault5">
+              <input class="form-check-input" name="feespaid[]" type="radio" value="Yes" name="Paid"
+                id="flexRadioDefault5">
               <label class="form-check-label" for="flexRadioDefault5">
                 Yes
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="Paid" id="flexRadioDefault6">
+              <input class="form-check-input" name="feespaid[]" type="radio" value="No" name="Paid"
+                id="flexRadioDefault6">
               <label class="form-check-label" for="flexRadioDefault6">
                 No
               </label>
             </div>
             <h6>Enrollment</h6>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="enrollment" id="flexRadioDefault1">
+              <input class="form-check-input" name="enrollstat[]" type="radio" value="Regular" name="enrollment"
+                id="flexRadioDefault1">
               <label class="form-check-label" for="flexRadioDefault1">
                 Regular
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="enrollment" id="flexRadioDefault2">
+              <input class="form-check-input" name="enrollstat[]" type="radio" value="Direct Second Year"
+                name="enrollment" id="flexRadioDefault2">
               <label class="form-check-label" for="flexRadioDefault2">
-                DSY
+                Direct Second Year
               </label>
             </div>
             <h6>Document Submission Status</h6>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="VIII, IX Marksheet"
+                id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
                 VIII, IX Marksheet
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="SSC Marksheet" id="flexCheckChecked">
               <label class="form-check-label" for="flexCheckChecked">
                 SSC Marksheet
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="HSC Marksheet" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
                 HSC Marksheet
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="Leaving Certificate"
+                id="flexCheckChecked">
               <label class="form-check-label" for="flexCheckChecked">
                 Leaving Certificate
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="GAP" id="flexCheckChecked">
               <label class="form-check-label" for="flexCheckChecked">
                 GAP (if applicable)
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="Domicile" id="flexCheckChecked">
               <label class="form-check-label" for="flexCheckChecked">
                 Domicile
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="Birth Certificate"
+                id="flexCheckChecked">
               <label class="form-check-label" for="flexCheckChecked">
                 Birth Certificate
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="Cast Certificate "
+                id="flexCheckChecked">
               <label class="form-check-label" for="flexCheckChecked">
                 Cast Certificate (if applicable)
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="Aadhar Card Attested"
+                id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
                 Aadhar Card Attested
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="Migration Certificate"
+                id="flexCheckChecked">
               <label class="form-check-label" for="flexCheckChecked">
                 Migration Certificate
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="Photos" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
                 Photos (x2)
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <input class="form-check-input" name="docs[]" type="checkbox" value="Bank Passbook Xerox"
+                id="flexCheckChecked">
               <label class="form-check-label" for="flexCheckChecked">
                 Bank Passbook Xerox
               </label>
