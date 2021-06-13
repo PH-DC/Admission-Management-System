@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2021 at 12:46 PM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 7.4.16
+-- Generation Time: Jun 13, 2021 at 01:15 PM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,8 +39,9 @@ CREATE TABLE `admission` (
 --
 
 INSERT INTO `admission` (`Sname`, `Semail`, `Susername`, `Spassword`) VALUES
-('Dave Bhandari', 'davekibh18phpcomp@student.mes.ac.in', 'root', ''),
-('Chinmay Mulay', 'chinmaymulay18php@student.mes.ac.in', 'Cmulay', 'ChinmayMulay');
+('Chinmay Mulay', 'chinmay.mulay30@gmail.com', 'cmulay', 'root'),
+('Saurabh Mhatre', 'mhatreunique@gmail.com', 'smhatre', 'smhatre'),
+('Dave Bhandari', 'davestephen2002@gmail.com', 'Davekibh', 'root');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
