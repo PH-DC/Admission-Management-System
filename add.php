@@ -44,9 +44,11 @@ if(isset($_POST['AddStudent'])) {
     $sql = "INSERT INTO data (Sadmission,Sname,Sdob,Sadd,Sphone,Smobile,Smail,Senrollid,Sbranch,Sscholar,Sfeestat,Senrollstat,Sdocumentstat) 	VALUES	 ('$get_Sadmission', '$get_Sname', '$get_Sdob', '$get_Sadd', '$get_Sphone', '$get_Smobile', '$get_Smail', '$get_Senrollid', '$get_Sbranch', '$get_Sscholar', '$get_Sfeestat', '$get_Senrollstat', '$get_SDocsstat')";
 
 	if($conn->query($sql) == TRUE) {
-		echo "Success";
+		echo "<script>";
+		echo "alert('Student added successfully!');";
+		echo "</script>";
 	} else {
-        echo "Error";
+        include 'dashboard.html';
     }
 	$conn -> close();
 }
