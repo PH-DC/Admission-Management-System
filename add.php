@@ -29,6 +29,11 @@ foreach ($_POST['docs'] as $final_SDocsstat) {
 }
 $get_SDocsstat = $final_SDocsstat;
 
+foreach($_POST['a'] as $x)
+{
+	echo "<br>Selected option is: ".$x;
+}
+
 $servername="localhost";
 $username="root";
 $password="";
