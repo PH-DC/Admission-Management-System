@@ -2,6 +2,7 @@
 
 $name_p = $_POST['name'];
 $email_p = $_POST['email'];
+
 $username_p = $_POST['username'];
 $password_p = $_POST['password'];
 
@@ -22,13 +23,14 @@ if(isset($_POST['Signup']))
 
 	if($conn->query($sql) == TRUE)
 	{
-		include 'dashboard.html';
+		echo "<script>";
+		echo "prompt ('Your account was created successfully. Please login to continue.')";
+		echo "</script>";
+		include 'login.html';
 	}
 	else
 	{
-		echo "<script>";
-		echo "alert ('We don't accept that email ID')";
-		echo "</script>";
+		
 	}
 	$conn -> close();
 }
