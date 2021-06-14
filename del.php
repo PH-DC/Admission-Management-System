@@ -17,9 +17,11 @@ if(isset($_POST['DeleteStudent'])) {
     $sql = "DELETE FROM data WHERE Senrollid = $get_Senrollid";
 
 	if($conn->query($sql) == TRUE) {
-		echo "Success";
+		echo "<script>";
+		echo "alert('Student removed successfully.');";
+		echo "</script>";
 	} else {
-        echo "Error";
+        include 'dashboard.html';
     }
 	$conn -> close();
 }

@@ -24,13 +24,13 @@ if(isset($_POST['Signup']))
 	if($conn->query($sql) == TRUE)
 	{
 		echo "<script>";
-		echo "prompt ('Your account was created successfully. Please login to continue.')";
+		echo "alert ('Your account was created successfully. Please login to continue.')";
 		echo "</script>";
 		include 'login.html';
 	}
 	else
 	{
-		
+		include 'login.html';
 	}
 	$conn -> close();
 }
