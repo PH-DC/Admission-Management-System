@@ -1,5 +1,7 @@
 <?php
 
+$name_p = $_POST['name'];
+$email_p = $_POST['email'];
 $username_p = $_POST['username'];
 $password_p = $_POST['password'];
 
@@ -10,23 +12,23 @@ $dbname="admission_system";
 
 $conn=new mysqli($servername,$username,$password,$dbname);
 
-if(isset($_POST['Login']))
+if(isset($_POST['Signup']))
 {
 	if (!$conn) 
 	{
 		die('Could not connect'.mysqli_connect_error());
 	}
-	$sql = "SELECT * FROM admission WHERE Susername='$username_p' AND Spassword='$password_p'";
-	$retval = mysqli_query($conn,$sql);
+	$sql = "INSERT INTO admission(Sname,Semail,Susername,Spassword) VALUES ('$name_p','$email_p','$username_p','$password_p')";
 
-	if($row = mysqli_fetch_array($retval))
+	if($conn->query($sql) == TRUE)
 	{
 		include 'dashboard.html';
 	}
 	else
 	{
-		include 'error.html';
-		
+		echo "<script>";
+		echo "alert ('We don't accept that email ID')";
+		echo "</script>";
 	}
 	$conn -> close();
 }

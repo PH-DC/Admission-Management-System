@@ -1,7 +1,5 @@
 <?php
 
-$name_p = $_POST['name'];
-$email_p = $_POST['email'];
 $username_p = $_POST['username'];
 $password_p = $_POST['password'];
 
@@ -12,20 +10,25 @@ $dbname="admission_system";
 
 $conn=new mysqli($servername,$username,$password,$dbname);
 
-if(isset($_POST['Signup']))
+if(isset($_POST['Login']))
 {
 	if (!$conn) 
 	{
 		die('Could not connect'.mysqli_connect_error());
 	}
-	$sql = "INSERT INTO admission(Sname,Semail,Susername,Spassword) VALUES ('$name_p','$email_p','$username_p','$password_p')";
+	$sql = "SELECT * FROM admission WHERE Susername='$username_p' AND Spassword='$password_p'";
+	$retval = mysqli_query($conn,$sql);
 
-	if($conn->query($sql) == TRUE)
+	if($row = mysqli_fetch_array($retval))
 	{
 		include 'dashboard.html';
 	}
 	else
 	{
+		echo "<script>";
+		echo "alert ('Incorrect Username or password')";
+		echo "</script>";
+		include 'login.html';
 	}
 	$conn -> close();
 }
