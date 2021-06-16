@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2021 at 04:12 PM
+-- Generation Time: Jun 16, 2021 at 03:57 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.6
 
@@ -39,9 +39,10 @@ CREATE TABLE `admission` (
 --
 
 INSERT INTO `admission` (`Sname`, `Semail`, `Susername`, `Spassword`) VALUES
-('Chinmay Mulay', 'chinmay.mulay30@gmail.com', 'cmulay', 'root'),
 ('Saurabh Mhatre', 'mhatreunique@gmail.com', 'smhatre', 'smhatre'),
-('Dave Bhandari', 'davestephen2002@gmail.com', 'Davekibh', 'root');
+('Dave Bhandari', 'davestephen2002@gmail.com', 'Davekibh', 'root'),
+('Chinmay Mulay', 'chinmaymulay18php@student.mes.ac.in', 'admin', 'admin'),
+('Test User', 'test@mail.com', 'test', 'test');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
