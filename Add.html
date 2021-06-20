@@ -137,6 +137,13 @@
                 No
               </label>
             </div>
+            <div class="form-check">
+              <input class="form-check-input" name="feespaid[]" type="radio" value="Partial" name="Paid"
+                id="flexRadioDefault6">
+              <label class="form-check-label" for="flexRadioDefault6">
+                Partial
+              </label>
+            </div>
             <h6>Enrollment</h6>
             <div class="form-check">
               <input class="form-check-input" name="enrollstat[]" type="radio" value="Regular" name="enrollment"
@@ -153,7 +160,7 @@
               </label>
             </div>
             <h6>Document Submission Status</h6>
-            <select name="a[]" multiple> 
+            <select name="docs[]" multiple>
               <option>VIII, IX Marksheet</option>
               <option>SSC Marksheet</option>
               <option>HSC Marksheet</option>
@@ -166,6 +173,7 @@
               <option>Migration Certificate</option>
               <option>Photos (x2)</option>
               <option>Bank Passbook Xerox</option>
+              <option>All Documents</option>
             </select><br><br>
             <button type="submit" class="btn btn-outline-primary" name="AddStudent">Add Student</button>
           </form>
