@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 16, 2021 at 03:57 PM
+-- Generation Time: Jun 20, 2021 at 02:44 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.6
 
@@ -42,6 +42,13 @@ CREATE TABLE `data` (
   `Senrollstat` text NOT NULL,
   `Sdocumentstat` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `data`
+--
+
+INSERT INTO `data` (`Sadmission`, `Sname`, `Sdob`, `Sadd`, `Sphone`, `Smobile`, `Smail`, `Senrollid`, `Sbranch`, `Sscholar`, `Sfeestat`, `Senrollstat`, `Sdocumentstat`) VALUES
+(2019, 'Test Student', '2002-01-02', 'Somewhere on Earth', 912345678, 912345678, 'teststudent@mail.com', 2147483647, 'Computer Engineering', 'is Eligible', 'Partial', 'Regular', 'All Documents');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
