@@ -1,63 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-body
-{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
+body {
+  background-color: white;
+  font-family: "Calibri", sans-serif;
 }
-.section-title{
-    position: relative;
-    font-size: 2rem;
-    color: #007BFF;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  .section{
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-  }
-  .bd-grid{
-    max-width: 1024px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-column-gap: 2rem;
-    width: calc(100% - 2rem);
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  .contact__form{
-    width: 360px;
-  }
-  .contact__container{
-    justify-items: center;
-  }
-  .tag__text{
-    font-size: 1rem;
-    color: #007BFF;
-    margin: 0 9rem;
-  }
-  .services__container
-{
-    gap: 2.5rem;
-    grid-template-columns: repeat(2, 2fr);
+
+.signup-box {
+  width: 360px;
+  height: 620px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
 }
-.services__content
-{
-    position: relative;
-    background-color: #FFF;
-    padding: 3.5rem .5rem 1.25rem 1.5rem;
-    padding-bottom: 4rem;
-    border-radius: .25rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
-    transition: .3s;
+
+.login-box {
+  width: 360px;
+  height: 280px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: white;
 }
-.services__content:hover
-{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
 }
-  @media screen and (min-width: 1024px){
-    .bd-grid{
-      margin-left: auto;
-      margin-right: auto;
-    }
+
+h4 {
+  text-align: center;
 }
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+input[type="button"] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color:#54BEFF ;
+  color: white;
+  font-size: 18px;
+}
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+.para-2 {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-top: -10px;
+}
+.para-2 a {
+  color: blue;
+}
+
+
