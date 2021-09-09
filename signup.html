@@ -1,59 +1,48 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Sign Up</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/signup.css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-
-<body>
-  <section class="contact section" id="contact">
-    <div class="services__container container grid">
-      <div class="services__content">
-        <h2 class="section-title">Sign Up</h2>
-
-        <div class="contact__container bd-grid">
-          <form action="signup.php" class="contact__form" method="POST">
-            <h6>Name</h6>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-              </div>
-              <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Username"
-                aria-describedby="basic-addon1" required>
-            </div>
-            <h6>Email</h6>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-              </div>
-              <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Username"
-                aria-describedby="basic-addon1" required>
-            </div>
-            <h6>Username</h6>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-              </div>
-              <input type="text" name="username" class="form-control" placeholder="Username" aria-label="Username"
-                aria-describedby="basic-addon1" required>
-            </div>
-            <h6>Password</h6>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-              </div>
-              <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Username"
-                aria-describedby="basic-addon1" required>
-            </div>
-            <button type="submit" class="btn btn-outline-primary" name="Signup">Sign Up</button>
-            <a href="login.html" style="margin-left: 7em;">Login instead?</a>
-          </form>
+<html
+lang="en">
+  <head>
+    <title>Sign Up | </title>
+    <link rel="stylesheet" href="style.css" />
+    />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h4></h4>
+      <form>
+         <div class="form-box">
+           <input type="number" name="institudeId" placeholder="Institute ID"  />
+        <div class="form-box">
+        <input type="text" name="firstName" placeholder="first name"/>
         </div>
-      </div>
+            <div class="form-box">
+              <input type="text" name="lastName" placeholder="last name" />
+            </div>
+        
+        
+            <div class="form-box">
+              <input type="email" name="email" placeholder="email" />
+            </div>
+             <div class="form-box">
+               <input type="text" name="designation" placeholder="Designation" />
+            <div class="form-box">
+              <input type="text" name="password" placeholder="password" />
+            </div>
+            
+        <input type="button" name="Submit" value="Submit" />
+      </form>
+      <p>
+        Already have an account?  <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+  
+      </form>
     </div>
-  </section>
-</body>
-
+    <p class="para-2">
+       <a href="signup.html">Sign In Here</a>
+    </p>
+  </body>
 </html>
+
+
+              
